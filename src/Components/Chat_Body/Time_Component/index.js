@@ -7,7 +7,7 @@ const TimeComponent = () => {
     })
     .toLowerCase();
   return (
-    <div className="time-container">
+    <div className="time-container ms-2">
       <span className="time-message">{now}</span>
     </div>
   );

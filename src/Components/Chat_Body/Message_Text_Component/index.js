@@ -1,12 +1,8 @@
-import AvatarMesage from "../Avatar_Message";
-import BubbleMesage from "../../Chat_Body/Message_Text_Component/Bubble_Message";
-
-function MessageComponent() {
+function MessageTextComponent({message}) {
   return (
-    <div className="message-component">
-      <AvatarMesage />
-      <BubbleMesage />
+    <div className="bubble-message p-2 shadow-sm bg-primary">
+      <span>{message}</span>
     </div>
   );
 }
-export default MessageComponent;
+export default MessageTextComponent;

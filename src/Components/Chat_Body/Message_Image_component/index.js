@@ -1,10 +1,14 @@
-import AvatarMesage from "../Avatar_Message/index";
-import BubbleImage from "./Bubble_Image/index";
+import TimeComponent from "../Time_Component/index";
 
-const ImageMessageComponent = () => {
-  <div className="message-component">
-    <AvatarMesage />
-    <BubbleImage />
-  </div>;
+const BubbleImage = ({ urImage }) => {
+  return (
+    <div className="bubble-image">
+      <div className="bubble-image-content bg-primary">
+        <img src={urImage}  alt="text example" loading="lazy" decoding="asynchronous"/>
+        <TimeComponent/>
+      </div>
+    </div>
+  );
 };
-export default ImageMessageComponent;
+export default BubbleImage;
+
