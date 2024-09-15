@@ -1,14 +1,15 @@
+import { Card } from "react-bootstrap";
 import TimeComponent from "../Time_Component/index";
+import AudioPlayerMini from "./Audio_Player_Mini";
 
 const BubbleAudio = ({urlAudio}) => {
     return (
-        <div className="bubble-message p-2 shadow-sm bg-primary my-2">
-        <audio controls>
-            <source src={urlAudio} type="audio/mpeg"/>
-            Your browser does not support the audio element.
-        </audio>
+        <Card className="border-0 shadow-sm my-2 bg-primary">
+        <div className="p-2">
+        {urlAudio && <AudioPlayerMini urlAudio={urlAudio}/>}
         <TimeComponent/>
         </div>
+        </Card>
     )
 }
 export default BubbleAudio;

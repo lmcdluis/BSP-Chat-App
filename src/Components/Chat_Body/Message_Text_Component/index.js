@@ -1,8 +1,13 @@
+import { Card } from "react-bootstrap";
+import TimeComponent from "../Time_Component";
 function MessageTextComponent({message}) {
   return (
-    <div className="bubble-message p-2 shadow-sm bg-primary">
+    <Card className="shadow-sm bg-primary border-0 my-2 text-white">
+      <div className="p-2">
       <span>{message}</span>
-    </div>
+      <TimeComponent/>
+      </div>
+    </Card>
   );
 }
 export default MessageTextComponent;
