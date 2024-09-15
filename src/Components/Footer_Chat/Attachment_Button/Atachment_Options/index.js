@@ -1,5 +1,4 @@
 import {
-  faClipboard,
   faFile,
   faFileAudio,
   faImage,
